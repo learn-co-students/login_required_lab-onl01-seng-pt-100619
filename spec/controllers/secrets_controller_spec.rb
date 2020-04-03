@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe SecretsController do
+RSpec.describe SecretsController, type: :controller do
   describe 'get show' do
     it "should redirect to login if you're not logged in" do
       get :show
