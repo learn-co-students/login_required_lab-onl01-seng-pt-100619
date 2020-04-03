@@ -1,0 +1,4 @@
+<h1>Hey <%=current_user%></h1>
+<%if current_user%>
+  <%=link_to "Secret", secrets_show_path%>
+<%end%>
